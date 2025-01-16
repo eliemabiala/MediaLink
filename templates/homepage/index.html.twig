@@ -1,123 +1,66 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil
+{% block title %}
+	Accueil
 {% endblock %}
 
 {% block javascripts %}
-	{% block importmap %}
-		{{ importmap(['app']) }}
+	{% block importmap %}{# Uncomment and use if necessary #}
+		{# {{ importmap(['app']) }} #}
 	{% endblock %}
 {% endblock %}
 
 {% block body %}
-	<body class="bg-gray-100">
-		<!-- Header -->
-
-
-		<!-- Main Content -->
-			<main class="py-10"> <div
-				class="container mx-auto">
-
-				<!-- Images and Text -->
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 gap-8">
-					<!-- Left Image -->
-					<div>
-						<img src="{{ asset('img/home/marier.png') }}" class="rounded shadow-md" alt="Facebook">
-
-
-					</div>
-					<!-- Right Text -->
-					<div>
-						<p class="text-gray-700">
-							En effet, j’interviens dans les entreprises pour photographier des événements professionnels comme des conventions, des séminaires et de portraits in situ. Je suis spécialiste en Web design. Photographe de mariage</p>
-					</div>
+	<main class="py-10 bg-gray-100">
+		<div
+			class="container mx-auto">
+			<!-- Grid Layout -->
+			<div
+				class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+				<!-- Item 1 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/filles.png') }}" alt="Image 1" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Obtenez un accompagnement complet, sécurisé et confidentiel dans vos démarches de voyage à l’international. Nous construisons avec vous votre projet de voyage et vous accompagnons pas à pas jusqu’à la réalisation de votre rêve.
+					</p>
 				</div>
-				<!-- Additional Sections -->
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-					<!-- Text Block -->
-					<div>
-						<p class="text-gray-700">
-							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.</p>
-
-					</div>
-
-					<div>
-						<img src="{{ asset('img/home/filles.png') }}" class="rounded shadow-md" alt="Facebook">
-
-					</div>
-
+				<!-- Item 2 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/marier.png') }}" alt="Image 2" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						En effet, j’interviens dans les entreprises pour photographier des événements professionnels comme des conventions, des séminaires et des portraits in situ. Je suis spécialiste en Web design. Photographe de mariage.
+					</p>
 				</div>
-
-				<!-- Additional Sections -->
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-					<!-- Text Block -->
-					<div>
-						<p class="text-gray-700">
-							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.
-						</p>
-					</div>
-					<div>
-						<img src="{{ asset('img/home/Couple.png') }}" class="rounded shadow-md" alt="Facebook">
-					</div>
-
+				<!-- Item 3 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/filles.png') }}" alt="Image 3" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Étant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.
+					</p>
 				</div>
-
-				<!-- Additional Sections -->
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-					<!-- Text Block -->
-					<div>
-						<p class="text-gray-700">
-							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.
-						</p>
-					</div>
-
-					<div>
-						<img src="{{ asset('img/home/demande.png') }}" class="rounded shadow-md" alt="Facebook">
-					</div>
+				<!-- Item 4 -->
+				<div class="bg-black rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/Couple.png') }}" alt="Image 4" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Je précise que mon style est composé essentiellement de photos naturelles, sans poser, prises sur l’instant. Le résultat du photo reportage sera d’une grande qualité d’image.
+					</p>
 				</div>
-				<div
-					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-					<!-- Text Block -->
-					<div>
-						<p class="text-gray-700">
-							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.</p>
-
-					</div>
-
-
-					<div>
-						<img src="{{ asset('img/home/filles.png') }}" class="rounded shadow-md" alt="Facebook">
-
-					</div>
-					<p class="text-gray-700">
-
-						Je précise dans un premier temps que mon style est composé essentiellement de photos naturelles, sans poser, prises sur l’instant. Par conséquent, le résultat du photo reportage sera d’une grande qualité d’image.
+				<!-- Item 5 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/demande.png') }}" alt="Image 5" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Nous créons avec vous des souvenirs uniques et mémorables grâce à notre approche personnalisée pour chaque couple et projet.
+					</p>
+				</div>
+				<!-- Item 6 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/filles.png') }}" alt="Image 6" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Travaillez avec un photographe passionné qui met en lumière l’authenticité et l’émotion de chaque moment.
 					</p>
 				</div>
 			</div>
-
-<div class="grid gap-6 md:grid-cols-2 xl:gap-8">
-	<article class="relative flex flex-col md:flex-row order-1 md:order-2">
-		<img src="{{ asset('img/home/filles.png') }}" alt="Voyage pour raison d'études, illustration d'un étudiant avec des bagages" class="rounded-lg mb-4 md:mb-0 w-full max-w-lg mx-auto md:max-w-full">
-
-	</article>
-
-	<article class="flex flex-col justify-center text-left order-2 md:order-1">
-		<p class="text-base sm:text-lg xl:text-xl mb-4">
-			Obtenez un accompagnement complet, sécurisé et confidentiel dans vos démarches de voyage à l’international. Nous construisons avec vous votre projet de voyage et vous accompagnons pas à pas jusqu’à la réalisation de votre rêve.
-		</p>
-	</article>
-</div>
-
-
-
-
-
-		</main>
-
-	</body>
+		</div>
+	</main>
 {% endblock %}
+
