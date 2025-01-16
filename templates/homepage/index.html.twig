@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Accueil
+{% endblock %}
+
+{% block javascripts %}
+	{% block importmap %}{# Uncomment and use if necessary #}
+		{# {{ importmap(['app']) }} #}
+	{% endblock %}
+{% endblock %}
+
+{% block body %}
+	<main class="py-10 bg-gray-100">
+		<div
+			class="container mx-auto">
+			<!-- Grid Layout -->
+			<div
+				class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+				<!-- Item 1 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/filles.png') }}" alt="Image 1" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Obtenez un accompagnement complet, sécurisé et confidentiel dans vos démarches de voyage à l’international. Nous construisons avec vous votre projet de voyage et vous accompagnons pas à pas jusqu’à la réalisation de votre rêve.
+					</p>
+				</div>
+				<!-- Item 2 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/marier.png') }}" alt="Image 2" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						En effet, j’interviens dans les entreprises pour photographier des événements professionnels comme des conventions, des séminaires et des portraits in situ. Je suis spécialiste en Web design. Photographe de mariage.
+					</p>
+				</div>
+				<!-- Item 3 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/filles.png') }}" alt="Image 3" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Étant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.
+					</p>
+				</div>
+				<!-- Item 4 -->
+				<div class="bg-black rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/Couple.png') }}" alt="Image 4" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Je précise que mon style est composé essentiellement de photos naturelles, sans poser, prises sur l’instant. Le résultat du photo reportage sera d’une grande qualité d’image.
+					</p>
+				</div>
+				<!-- Item 5 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/demande.png') }}" alt="Image 5" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Nous créons avec vous des souvenirs uniques et mémorables grâce à notre approche personnalisée pour chaque couple et projet.
+					</p>
+				</div>
+				<!-- Item 6 -->
+				<div class="bg-white rounded-lg shadow-md p-4">
+					<img src="{{ asset('img/home/filles.png') }}" alt="Image 6" class="rounded-lg mb-4 w-full">
+					<p class="text-gray-700 text-sm">
+						Travaillez avec un photographe passionné qui met en lumière l’authenticité et l’émotion de chaque moment.
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock %}
+
