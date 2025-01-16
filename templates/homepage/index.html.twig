@@ -10,46 +10,44 @@
 {% endblock %}
 
 {% block body %}
-	<body
-		class="bg-gray-100">
+	<body class="bg-gray-100">
 		<!-- Header -->
-		<header class="bg-blue-900 text-white py-4">
-			<div class="container mx-auto flex justify-between items-center">
-				<div class="text-2xl font-bold">Endie-pro</div>
-				<nav class="space-x-4">
-					<a href="#" class="text-white hover:text-gray-300">Accueil</a>
-					<a href="#" class="text-white hover:text-gray-300">Nos Services</a>
-					<a href="#" class="text-white hover:text-gray-300">Galeries</a>
-					<a href="#" class="text-white hover:text-gray-300">Contact</a>
-					<a href="#" class="text-white hover:text-gray-300">FAQ</a>
-					<a href="#" class="text-white hover:text-gray-300">À propos</a>
-				</nav>
-			</div>
-		</header>
+
 
 		<!-- Main Content -->
-		<main class="py-10">
-			<div
+			<main class="py-10"> <div
 				class="container mx-auto">
-				<!-- Section 1 -->
-				<div class="text-center mb-10">
-					<h1 class="text-4xl font-bold mb-4">Endie-pro</h1>
-					<p class="text-gray-700">Je suis photographe et vidéaste de mariage...</p>
-				</div>
 
 				<!-- Images and Text -->
 				<div
 					class="grid grid-cols-1 md:grid-cols-2 gap-8">
 					<!-- Left Image -->
 					<div>
-						<img src="/path/to/image1.jpg" alt="Bride" class="rounded shadow-md">
+						<img src="{{ asset('img/home/marier.png') }}" class="rounded shadow-md" alt="Facebook">
+
+
 					</div>
 					<!-- Right Text -->
 					<div>
 						<p class="text-gray-700">
-							J'exerce la profession de photographe et vidéaste de mariage et de photos d'entreprise...
-						</p>
+							En effet, j’interviens dans les entreprises pour photographier des événements professionnels comme des conventions, des séminaires et de portraits in situ. Je suis spécialiste en Web design. Photographe de mariage</p>
 					</div>
+				</div>
+				<!-- Additional Sections -->
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+					<!-- Text Block -->
+					<div>
+						<p class="text-gray-700">
+							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.</p>
+
+					</div>
+
+					<div>
+						<img src="{{ asset('img/home/filles.png') }}" class="rounded shadow-md" alt="Facebook">
+
+					</div>
+
 				</div>
 
 				<!-- Additional Sections -->
@@ -58,23 +56,68 @@
 					<!-- Text Block -->
 					<div>
 						<p class="text-gray-700">
-							En effet, j’interviens dans les entreprises pour photographier...
+							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.
 						</p>
 					</div>
-					<!-- Image Block -->
 					<div>
-						<img src="/path/to/image2.jpg" alt="Group of Bridesmaids" class="rounded shadow-md">
+						<img src="{{ asset('img/home/Couple.png') }}" class="rounded shadow-md" alt="Facebook">
+					</div>
+
+				</div>
+
+				<!-- Additional Sections -->
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+					<!-- Text Block -->
+					<div>
+						<p class="text-gray-700">
+							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.
+						</p>
+					</div>
+
+					<div>
+						<img src="{{ asset('img/home/demande.png') }}" class="rounded shadow-md" alt="Facebook">
 					</div>
 				</div>
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+					<!-- Text Block -->
+					<div>
+						<p class="text-gray-700">
+							Etant à l’écoute des futurs couples, je suis photographe de mariage à Lyon qui s’adapte à leurs demandes pour que le reportage soit le reflet d’une journée inoubliable.</p>
+
+					</div>
+
+
+					<div>
+						<img src="{{ asset('img/home/filles.png') }}" class="rounded shadow-md" alt="Facebook">
+
+					</div>
+					<p class="text-gray-700">
+
+						Je précise dans un premier temps que mon style est composé essentiellement de photos naturelles, sans poser, prises sur l’instant. Par conséquent, le résultat du photo reportage sera d’une grande qualité d’image.
+					</p>
+				</div>
 			</div>
+
+<div class="grid gap-6 md:grid-cols-2 xl:gap-8">
+	<article class="relative flex flex-col md:flex-row order-1 md:order-2">
+		<img src="{{ asset('img/home/filles.png') }}" alt="Voyage pour raison d'études, illustration d'un étudiant avec des bagages" class="rounded-lg mb-4 md:mb-0 w-full max-w-lg mx-auto md:max-w-full">
+
+	</article>
+
+	<article class="flex flex-col justify-center text-left order-2 md:order-1">
+		<p class="text-base sm:text-lg xl:text-xl mb-4">
+			Obtenez un accompagnement complet, sécurisé et confidentiel dans vos démarches de voyage à l’international. Nous construisons avec vous votre projet de voyage et vous accompagnons pas à pas jusqu’à la réalisation de votre rêve.
+		</p>
+	</article>
+</div>
+
+
+
+
+
 		</main>
 
-		<!-- Footer -->
-		<footer class="bg-blue-900 text-white py-4 mt-10">
-			<div class="container mx-auto text-center">
-				<p>© 2023 Endie_pro. Tous droits réservés.</p>
-			</div>
-		</footer>
 	</body>
 {% endblock %}
-
